@@ -149,7 +149,6 @@ module.exports = (api, options) => {
       webpackConfig.optimization.splitChunks &&
       webpackConfig.optimization.splitChunks.cacheGroups
     ) {
-      console.log(webpackConfig.optimization.splitChunks.cacheGroups)
       if (webpackConfig.optimization.splitChunks.cacheGroups.defaultVendors) {
         webpackConfig.optimization.splitChunks.cacheGroups.defaultVendors.chunks = omitUserScripts
       }
